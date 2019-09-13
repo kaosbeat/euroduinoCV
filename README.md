@@ -8,4 +8,4 @@ firmware for homebrew Eurorack module
 outputs on different pins are different.
  D0 and D1 are in use for serial, but wired tot button white/black
 
- 
+![pic](eurduino1.jpg "obligatory picture")
