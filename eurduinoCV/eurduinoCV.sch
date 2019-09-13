@@ -1,0 +1,510 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A?
+U 1 1 5D711C6C
+P 4400 3650
+F 0 "A?" H 4400 2564 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 4400 2473 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 4550 2700 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 4400 2650 50  0001 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 5D711D42
+P 6050 2750
+F 0 "Q?" H 6241 2796 50  0000 L CNN
+F 1 "BC337" H 6241 2705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6250 2675 50  0001 L CIN
+F 3 "http://www.nxp.com/documents/data_sheet/BC817_BC817W_BC337.pdf" H 6050 2750 50  0001 L CNN
+	1    6050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D711DE3
+P 6150 2150
+F 0 "#PWR?" H 6150 1900 50  0001 C CNN
+F 1 "GND" H 6155 1977 50  0000 C CNN
+F 2 "" H 6150 2150 50  0001 C CNN
+F 3 "" H 6150 2150 50  0001 C CNN
+	1    6150 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D71216E
+P 6150 3150
+F 0 "R?" V 6250 3150 50  0000 C CNN
+F 1 "1M" V 6150 3150 50  0000 C CNN
+F 2 "" V 6080 3150 50  0001 C CNN
+F 3 "~" H 6150 3150 50  0001 C CNN
+	1    6150 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7121FC
+P 5850 2500
+F 0 "R?" V 5950 2550 50  0000 R CNN
+F 1 "10K" V 5850 2600 50  0000 R CNN
+F 2 "" V 5780 2500 50  0001 C CNN
+F 3 "~" H 5850 2500 50  0001 C CNN
+	1    5850 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D712246
+P 6150 3450
+F 0 "#PWR?" H 6150 3300 50  0001 C CNN
+F 1 "+5V" H 6165 3623 50  0000 C CNN
+F 2 "" H 6150 3450 50  0001 C CNN
+F 3 "" H 6150 3450 50  0001 C CNN
+	1    6150 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2550 6150 2300
+Wire Wire Line
+	5850 2350 5850 2300
+Wire Wire Line
+	5850 2300 6150 2300
+Connection ~ 6150 2300
+Wire Wire Line
+	6150 2300 6150 2150
+$Comp
+L Device:R R?
+U 1 1 5D712712
+P 5700 2750
+F 0 "R?" V 5800 2750 50  0000 C CNN
+F 1 "100K" V 5700 2750 50  0000 C CNN
+F 2 "" V 5630 2750 50  0001 C CNN
+F 3 "~" H 5700 2750 50  0001 C CNN
+	1    5700 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 2650 5850 2750
+Connection ~ 5850 2750
+Wire Wire Line
+	6150 2950 6150 3000
+Wire Wire Line
+	6150 3300 6150 3350
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5D712C4E
+P 6900 2200
+F 0 "J?" H 6667 2179 50  0000 R CNN
+F 1 "CV_in1" H 6667 2270 50  0000 R CNN
+F 2 "" H 6900 2200 50  0001 C CNN
+F 3 "~" H 6900 2200 50  0001 C CNN
+	1    6900 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 2300 6700 2300
+Wire Wire Line
+	6150 3350 6600 3350
+Wire Wire Line
+	6600 3350 6600 2200
+Wire Wire Line
+	6600 2200 6700 2200
+Connection ~ 6150 3350
+Wire Wire Line
+	6150 3350 6150 3450
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 5D7139A4
+P 6050 4600
+F 0 "Q?" H 6241 4646 50  0000 L CNN
+F 1 "BC337" H 6241 4555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6250 4525 50  0001 L CIN
+F 3 "http://www.nxp.com/documents/data_sheet/BC817_BC817W_BC337.pdf" H 6050 4600 50  0001 L CNN
+	1    6050 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D7139AB
+P 6150 4000
+F 0 "#PWR?" H 6150 3750 50  0001 C CNN
+F 1 "GND" H 6155 3827 50  0000 C CNN
+F 2 "" H 6150 4000 50  0001 C CNN
+F 3 "" H 6150 4000 50  0001 C CNN
+	1    6150 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7139B1
+P 6150 5000
+F 0 "R?" V 6250 5000 50  0000 C CNN
+F 1 "1M" V 6150 5000 50  0000 C CNN
+F 2 "" V 6080 5000 50  0001 C CNN
+F 3 "~" H 6150 5000 50  0001 C CNN
+	1    6150 5000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D7139B8
+P 5850 4350
+F 0 "R?" V 5950 4400 50  0000 R CNN
+F 1 "10K" V 5850 4450 50  0000 R CNN
+F 2 "" V 5780 4350 50  0001 C CNN
+F 3 "~" H 5850 4350 50  0001 C CNN
+	1    5850 4350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D7139BF
+P 6150 5300
+F 0 "#PWR?" H 6150 5150 50  0001 C CNN
+F 1 "+5V" H 6165 5473 50  0000 C CNN
+F 2 "" H 6150 5300 50  0001 C CNN
+F 3 "" H 6150 5300 50  0001 C CNN
+	1    6150 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 4400 6150 4150
+Wire Wire Line
+	5850 4200 5850 4150
+Wire Wire Line
+	5850 4150 6150 4150
+Connection ~ 6150 4150
+Wire Wire Line
+	6150 4150 6150 4000
+$Comp
+L Device:R R?
+U 1 1 5D7139CA
+P 5700 4600
+F 0 "R?" V 5800 4600 50  0000 C CNN
+F 1 "100K" V 5700 4600 50  0000 C CNN
+F 2 "" V 5630 4600 50  0001 C CNN
+F 3 "~" H 5700 4600 50  0001 C CNN
+	1    5700 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5850 4500 5850 4600
+Connection ~ 5850 4600
+Wire Wire Line
+	6150 4800 6150 4850
+Wire Wire Line
+	6150 5150 6150 5200
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5D7139D5
+P 6900 4050
+F 0 "J?" H 6667 4029 50  0000 R CNN
+F 1 "CV_in2" H 6667 4120 50  0000 R CNN
+F 2 "" H 6900 4050 50  0001 C CNN
+F 3 "~" H 6900 4050 50  0001 C CNN
+	1    6900 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6150 4150 6700 4150
+Wire Wire Line
+	6150 5200 6600 5200
+Wire Wire Line
+	6600 5200 6600 4050
+Wire Wire Line
+	6600 4050 6700 4050
+Connection ~ 6150 5200
+Wire Wire Line
+	6150 5200 6150 5300
+Wire Wire Line
+	4900 3750 5350 3750
+Wire Wire Line
+	5350 3750 5350 4600
+Wire Wire Line
+	5350 4600 5550 4600
+Wire Wire Line
+	4900 3650 5350 3650
+Wire Wire Line
+	5350 3650 5350 2750
+Wire Wire Line
+	5350 2750 5550 2750
+$Comp
+L power:+12V #PWR?
+U 1 1 5D7204F9
+P 1700 2000
+F 0 "#PWR?" H 1700 1850 50  0001 C CNN
+F 1 "+12V" H 1715 2173 50  0000 C CNN
+F 2 "" H 1700 2000 50  0001 C CNN
+F 3 "" H 1700 2000 50  0001 C CNN
+	1    1700 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5D720D7C
+P 1500 3250
+F 0 "J?" H 1504 3592 50  0000 C CNN
+F 1 "GATE_in" H 1504 3501 50  0000 C CNN
+F 2 "" H 1500 3250 50  0001 C CNN
+F 3 "~" H 1500 3250 50  0001 C CNN
+	1    1500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D72220C
+P 2400 3800
+F 0 "D?" H 2400 4000 50  0000 L CNN
+F 1 "1N914" H 2300 3900 50  0000 L CNN
+F 2 "" H 2400 3800 50  0001 C CNN
+F 3 "~" H 2400 3800 50  0001 C CNN
+	1    2400 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D72264C
+P 2400 4400
+F 0 "#PWR?" H 2400 4150 50  0001 C CNN
+F 1 "GND" H 2405 4227 50  0000 C CNN
+F 2 "" H 2400 4400 50  0001 C CNN
+F 3 "" H 2400 4400 50  0001 C CNN
+	1    2400 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 3250 1750 3250
+Wire Wire Line
+	2400 3950 2400 4250
+$Comp
+L power:+5V #PWR?
+U 1 1 5D724938
+P 2200 4400
+F 0 "#PWR?" H 2200 4250 50  0001 C CNN
+F 1 "+5V" H 2215 4573 50  0000 C CNN
+F 2 "" H 2200 4400 50  0001 C CNN
+F 3 "" H 2200 4400 50  0001 C CNN
+	1    2200 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5D7249CC
+P 2200 3800
+F 0 "D?" H 2250 4000 50  0000 R CNN
+F 1 "1N914" H 2050 3900 50  0000 L CNN
+F 2 "" H 2200 3800 50  0001 C CNN
+F 3 "~" H 2200 3800 50  0001 C CNN
+	1    2200 3800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 3950 2200 4400
+$Comp
+L Device:R R?
+U 1 1 5D725A24
+P 1900 3250
+F 0 "R?" V 2000 3250 50  0000 C CNN
+F 1 "22" V 1900 3250 50  0000 C CNN
+F 2 "" V 1830 3250 50  0001 C CNN
+F 3 "~" H 1900 3250 50  0001 C CNN
+	1    1900 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 3650 2200 3250
+Connection ~ 2200 3250
+Wire Wire Line
+	2200 3250 2050 3250
+Wire Wire Line
+	2750 4250 2400 4250
+Connection ~ 2400 4250
+Wire Wire Line
+	2400 4250 2400 4400
+$Comp
+L Device:R R?
+U 1 1 5D7287F8
+P 3100 3800
+F 0 "R?" V 3200 3800 50  0000 C CNN
+F 1 "12K" V 3100 3800 50  0000 C CNN
+F 2 "" V 3030 3800 50  0001 C CNN
+F 3 "~" H 3100 3800 50  0001 C CNN
+	1    3100 3800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1700 3150 2950 3150
+Wire Wire Line
+	2950 4250 2750 4250
+Connection ~ 2750 4250
+Connection ~ 2750 3250
+Wire Wire Line
+	2750 3250 2750 3800
+Connection ~ 2400 3250
+Wire Wire Line
+	2200 3250 2400 3250
+Wire Wire Line
+	2400 3250 2400 3650
+Wire Wire Line
+	2400 3250 2750 3250
+Wire Wire Line
+	2750 3250 3100 3250
+$Comp
+L Device:R R?
+U 1 1 5D735FB2
+P 1700 1700
+F 0 "R?" V 1800 1700 50  0000 C CNN
+F 1 "68K" V 1700 1700 50  0000 C CNN
+F 2 "" V 1630 1700 50  0001 C CNN
+F 3 "~" H 1700 1700 50  0001 C CNN
+	1    1700 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1850 1700 2000
+$Comp
+L Device:R R?
+U 1 1 5D7376B6
+P 1700 1250
+F 0 "R?" V 1800 1250 50  0000 C CNN
+F 1 "38K" V 1700 1250 50  0000 C CNN
+F 2 "" V 1630 1250 50  0001 C CNN
+F 3 "~" H 1700 1250 50  0001 C CNN
+	1    1700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J?
+U 1 1 5D73781E
+P 1000 1500
+F 0 "J?" H 1004 1842 50  0000 C CNN
+F 1 "GATE_OUT 7.6V" H 1004 1751 50  0000 C CNN
+F 2 "" H 1000 1500 50  0001 C CNN
+F 3 "~" H 1000 1500 50  0001 C CNN
+	1    1000 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1400 1700 1500
+Wire Wire Line
+	1700 1500 1200 1500
+Connection ~ 1700 1500
+Wire Wire Line
+	1700 1500 1700 1550
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 5D73A726
+P 2050 1600
+F 0 "Q?" V 2378 1600 50  0000 C CNN
+F 1 "BC338" V 2287 1600 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2250 1525 50  0001 L CIN
+F 3 "http://www.nxp.com/documents/data_sheet/BC817_BC817W_BC337.pdf" H 2050 1600 50  0001 L CNN
+	1    2050 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2850 950  4600 2500
+$Comp
+L Device:R R?
+U 1 1 5D746C76
+P 2050 2050
+F 0 "R?" V 2150 2050 50  0000 C CNN
+F 1 "1.2K" V 2050 2050 50  0000 C CNN
+F 2 "" V 1980 2050 50  0001 C CNN
+F 3 "~" H 2050 2050 50  0001 C CNN
+	1    2050 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2200 3800 3350
+Wire Wire Line
+	1700 1100 2350 1100
+Wire Wire Line
+	2350 1100 2350 1500
+Wire Wire Line
+	2350 1500 2550 1500
+Wire Wire Line
+	2550 1500 2550 1000
+Wire Wire Line
+	2550 1000 1500 1000
+Wire Wire Line
+	1500 1000 1500 1400
+Wire Wire Line
+	1500 1400 1200 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5D74A6B2
+P 2350 2000
+F 0 "#PWR?" H 2350 1750 50  0001 C CNN
+F 1 "GND" H 2355 1827 50  0000 C CNN
+F 2 "" H 2350 2000 50  0001 C CNN
+F 3 "" H 2350 2000 50  0001 C CNN
+	1    2350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 1750 3250 1750
+Wire Wire Line
+	2250 1500 2350 1500
+Connection ~ 2350 1500
+Wire Wire Line
+	2350 1500 2350 2000
+Wire Wire Line
+	3800 3350 3900 3350
+Wire Wire Line
+	1700 1500 1850 1500
+Wire Wire Line
+	2050 1800 2050 1900
+$Comp
+L Device:C C?
+U 1 1 5D761F03
+P 1500 4950
+F 0 "C?" H 1615 4996 50  0000 L CNN
+F 1 "C" H 1615 4905 50  0000 L CNN
+F 2 "" H 1538 4800 50  0001 C CNN
+F 3 "~" H 1500 4950 50  0001 C CNN
+	1    1500 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5D762008
+P 2750 3900
+F 0 "C?" H 2700 4000 50  0000 L CNN
+F 1 "100pf" H 2650 3800 50  0000 L CNN
+F 2 "" H 2750 3900 50  0001 C CNN
+F 3 "~" H 2750 3900 50  0001 C CNN
+	1    2750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 4000 2750 4250
+Wire Wire Line
+	2950 3150 2950 4250
+Wire Wire Line
+	3100 3250 3100 3650
+Connection ~ 3100 3250
+Wire Wire Line
+	3100 3250 3900 3250
+Wire Wire Line
+	3100 3950 3100 4250
+Wire Wire Line
+	3100 4250 2950 4250
+Connection ~ 2950 4250
+$EndSCHEMATC
